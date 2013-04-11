@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "errandFactory.h"
 
 @interface ViewController : UIViewController
 

@@ -10,9 +10,18 @@
 
 @implementation errandFactory
 
-+(baseErrand *)createErrand: (int)errandType
++(baseErrand *)createErrand:(int)errandType
 {
-	return [[groceryErrand alloc] init];
+	// Create proper errand based on the type value sent into this method
+	if (errandType == DRYCLEANING) {
+    	return [[drycleaningErrand alloc] init];
+    } else if (errandType == GROCERY) {
+    	return [[groceryErrand alloc] init];
+    } else if (errandType == MAIL) {
+    	return [[mailErrand alloc] init];
+    } else {
+    	return nil;
+    }
 }
 
 @end

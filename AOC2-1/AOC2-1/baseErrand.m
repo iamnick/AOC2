@@ -10,13 +10,12 @@
 
 @implementation baseErrand
 
-@synthesize errandDetails, errandLocation, errandTimeMinutes;
+@synthesize errandLocation, errandTimeMinutes;
 
 -(id)init
 {
 	self = [super init];
     if (self != nil) {
-    	errandDetails = nil;
         errandLocation = nil;
         errandTimeMinutes = 0;
     }
@@ -25,7 +24,7 @@
 
 -(void)calculateErrandTime
 {
-	NSLog(@"This errand will take %d minutes to do.", errandTimeMinutes);
+
 }
 
 @end

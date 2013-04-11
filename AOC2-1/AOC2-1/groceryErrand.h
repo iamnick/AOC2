@@ -10,4 +10,6 @@
 
 @interface groceryErrand : baseErrand
 
+@property NSArray *groceryList;
+
 @end

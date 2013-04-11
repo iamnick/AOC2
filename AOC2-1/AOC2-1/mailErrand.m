@@ -10,4 +10,16 @@
 
 @implementation mailErrand
 
+@synthesize itemsToMail, packagesToPickup;
+
+-(id)init
+{
+	self = [super init];
+    if (self != nil) {
+        [self setErrandLocation:@"Big Y"];
+        [self setErrandTimeMinutes:10];
+    }
+    return self;
+}
+
 @end

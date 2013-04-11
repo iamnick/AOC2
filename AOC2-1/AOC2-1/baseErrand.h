@@ -19,7 +19,6 @@ typedef enum {
     MAIL
 } errandEnum;
 
-@property NSString *errandDetails;
 @property NSString *errandLocation;
 @property int errandTimeMinutes;
 

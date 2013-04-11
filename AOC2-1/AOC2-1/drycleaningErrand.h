@@ -10,4 +10,7 @@
 
 @interface drycleaningErrand : baseErrand
 
+@property int itemsToPickUp;
+@property int itemsToDropOff;
+
 @end

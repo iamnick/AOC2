@@ -10,4 +10,16 @@
 
 @implementation drycleaningErrand
 
+@synthesize itemsToPickUp, itemsToDropOff;
+
+-(id)init
+{
+	self = [super init];
+    if (self != nil) {
+        [self setErrandLocation:@"Big Y"];
+        [self setErrandTimeMinutes:10];
+    }
+    return self;
+}
+
 @end
