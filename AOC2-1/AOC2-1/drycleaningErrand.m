@@ -16,10 +16,17 @@
 {
 	self = [super init];
     if (self != nil) {
-        [self setErrandLocation:@"Big Y"];
-        [self setErrandTimeMinutes:10];
+        [self setErrandLocation:@"Battison's"];
+        [self setErrandDay:@"Thursday"];
+        [self setErrandTimeMinutes:20];
     }
     return self;
+}
+
+-(void)calculateErrandTime
+{
+	// Add a minute per item being picked up or dropped off
+    [self setErrandTimeMinutes:(self.errandTimeMinutes + itemsToPickUp + itemsToDropOff)];
 }
 
 @end

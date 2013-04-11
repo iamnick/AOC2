@@ -20,8 +20,10 @@ typedef enum {
 } errandEnum;
 
 @property NSString *errandLocation;
+@property NSString *errandDay;
 @property int errandTimeMinutes;
 
 -(id)init;
 -(void)calculateErrandTime;
+
 @end

@@ -17,6 +17,7 @@
 	self = [super init];
     if (self != nil) {
         [self setErrandLocation:@"Big Y"];
+        [self setErrandDay:@"Saturday"];
         [self setErrandTimeMinutes:10];
     }
     return self;

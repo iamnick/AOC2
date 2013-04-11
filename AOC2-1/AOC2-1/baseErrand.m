@@ -10,13 +10,14 @@
 
 @implementation baseErrand
 
-@synthesize errandLocation, errandTimeMinutes;
+@synthesize errandLocation, errandDay, errandTimeMinutes;
 
 -(id)init
 {
 	self = [super init];
     if (self != nil) {
         errandLocation = nil;
+        errandDay = nil;
         errandTimeMinutes = 0;
     }
     return self;
@@ -24,7 +25,7 @@
 
 -(void)calculateErrandTime
 {
-
+	// specific calculations done in each subclass via override
 }
 
 @end

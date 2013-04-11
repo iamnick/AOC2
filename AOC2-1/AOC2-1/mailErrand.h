@@ -10,7 +10,7 @@
 
 @interface mailErrand : baseErrand
 
-@property int itemsToMail;
-@property int packagesToPickup;
+@property int packagesToSend;
+@property int packagesToPickUp;
 
 @end
