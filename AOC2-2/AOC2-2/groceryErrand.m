@@ -10,7 +10,7 @@
 
 @implementation groceryErrand
 
-@synthesize groceryList;
+@synthesize groceryListItems;
 
 -(id)init
 {
@@ -26,7 +26,7 @@
 -(void)calculateErrandTime
 {
 	// Allow 3 minutes per item on grocery list
-	[self setErrandTimeMinutes:(self.errandTimeMinutes + ([groceryList count] * 3))];
+	[self setErrandTimeMinutes:(self.errandTimeMinutes + (groceryListItems * 3))];
 }
 
 @end
