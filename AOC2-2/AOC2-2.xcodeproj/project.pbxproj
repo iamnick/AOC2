@@ -21,6 +21,11 @@
 		82039014171F615A00AC651C /* package.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82039011171F615A00AC651C /* package.jpg */; };
 		82039015171F615A00AC651C /* shoppingcart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82039012171F615A00AC651C /* shoppingcart.jpg */; };
 		82039016171F615A00AC651C /* suit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82039013171F615A00AC651C /* suit.jpg */; };
+		82039019171FFA6700AC651C /* baseErrand.m in Sources */ = {isa = PBXBuildFile; fileRef = 82039018171FFA6700AC651C /* baseErrand.m */; };
+		8203901C171FFACD00AC651C /* errandFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8203901B171FFACD00AC651C /* errandFactory.m */; };
+		8203901F171FFB1C00AC651C /* groceryErrand.m in Sources */ = {isa = PBXBuildFile; fileRef = 8203901E171FFB1C00AC651C /* groceryErrand.m */; };
+		82039022171FFB6700AC651C /* mailErrand.m in Sources */ = {isa = PBXBuildFile; fileRef = 82039021171FFB6700AC651C /* mailErrand.m */; };
+		82039025171FFB9900AC651C /* drycleaningErrand.m in Sources */ = {isa = PBXBuildFile; fileRef = 82039024171FFB9900AC651C /* drycleaningErrand.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +48,16 @@
 		82039011171F615A00AC651C /* package.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = package.jpg; path = ../../../package.jpg; sourceTree = "<group>"; };
 		82039012171F615A00AC651C /* shoppingcart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = shoppingcart.jpg; path = ../../../shoppingcart.jpg; sourceTree = "<group>"; };
 		82039013171F615A00AC651C /* suit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = suit.jpg; path = ../../../suit.jpg; sourceTree = "<group>"; };
+		82039017171FFA6700AC651C /* baseErrand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseErrand.h; sourceTree = "<group>"; };
+		82039018171FFA6700AC651C /* baseErrand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baseErrand.m; sourceTree = "<group>"; };
+		8203901A171FFACC00AC651C /* errandFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = errandFactory.h; sourceTree = "<group>"; };
+		8203901B171FFACD00AC651C /* errandFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = errandFactory.m; sourceTree = "<group>"; };
+		8203901D171FFB1C00AC651C /* groceryErrand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = groceryErrand.h; sourceTree = "<group>"; };
+		8203901E171FFB1C00AC651C /* groceryErrand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = groceryErrand.m; sourceTree = "<group>"; };
+		82039020171FFB6700AC651C /* mailErrand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mailErrand.h; sourceTree = "<group>"; };
+		82039021171FFB6700AC651C /* mailErrand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mailErrand.m; sourceTree = "<group>"; };
+		82039023171FFB9900AC651C /* drycleaningErrand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drycleaningErrand.h; sourceTree = "<group>"; };
+		82039024171FFB9900AC651C /* drycleaningErrand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = drycleaningErrand.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +113,16 @@
 				82039007171F5F6100AC651C /* ViewController.m */,
 				82039009171F5F6100AC651C /* ViewController.xib */,
 				82038FF5171F5F6100AC651C /* Supporting Files */,
+				82039017171FFA6700AC651C /* baseErrand.h */,
+				82039018171FFA6700AC651C /* baseErrand.m */,
+				8203901A171FFACC00AC651C /* errandFactory.h */,
+				8203901B171FFACD00AC651C /* errandFactory.m */,
+				8203901D171FFB1C00AC651C /* groceryErrand.h */,
+				8203901E171FFB1C00AC651C /* groceryErrand.m */,
+				82039020171FFB6700AC651C /* mailErrand.h */,
+				82039021171FFB6700AC651C /* mailErrand.m */,
+				82039023171FFB9900AC651C /* drycleaningErrand.h */,
+				82039024171FFB9900AC651C /* drycleaningErrand.m */,
 			);
 			path = "AOC2-2";
 			sourceTree = "<group>";
@@ -188,6 +213,11 @@
 				82038FFB171F5F6100AC651C /* main.m in Sources */,
 				82038FFF171F5F6100AC651C /* AppDelegate.m in Sources */,
 				82039008171F5F6100AC651C /* ViewController.m in Sources */,
+				82039019171FFA6700AC651C /* baseErrand.m in Sources */,
+				8203901C171FFACD00AC651C /* errandFactory.m in Sources */,
+				8203901F171FFB1C00AC651C /* groceryErrand.m in Sources */,
+				82039022171FFB6700AC651C /* mailErrand.m in Sources */,
+				82039025171FFB9900AC651C /* drycleaningErrand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
