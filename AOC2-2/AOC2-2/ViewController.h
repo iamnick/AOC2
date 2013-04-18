@@ -11,9 +11,9 @@
 
 @interface ViewController : UIViewController
 {
+	IBOutlet UIButton *drycleaningButton;
 	IBOutlet UIButton *groceryButton;
     IBOutlet UIButton *mailButton;
-    IBOutlet UIButton *drycleaningButton;
     
     IBOutlet UILabel *propertyDescLabelA;
     IBOutlet UILabel *propertyDescLabelB;
@@ -21,8 +21,13 @@
     IBOutlet UILabel *propertyValLabelB;
 	IBOutlet UIStepper *propertyStepperA;
     IBOutlet UIStepper *propertyStepperB;
+    
+    IBOutlet UIButton *calcButton;
+    IBOutlet UILabel *errandTimeLabel;
 }
 
 -(IBAction)onErrandClick:(id)sender;
 -(IBAction)onStepperChange:(id)sender;
+-(IBAction)onCalculateClick:(id)sender;
+
 @end

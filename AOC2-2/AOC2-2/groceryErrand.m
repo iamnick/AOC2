@@ -26,7 +26,8 @@
 -(void)calculateErrandTime
 {
 	// Allow 3 minutes per item on grocery list
-	[self setErrandTimeMinutes:(self.errandTimeMinutes + (groceryListItems * 3))];
+    int extraTime = groceryListItems * 3;
+	[self setErrandTimeMinutes:(self.errandTimeMinutes + extraTime)];
 }
 
 @end
