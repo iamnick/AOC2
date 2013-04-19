@@ -26,6 +26,8 @@
 		8203901F171FFB1C00AC651C /* groceryErrand.m in Sources */ = {isa = PBXBuildFile; fileRef = 8203901E171FFB1C00AC651C /* groceryErrand.m */; };
 		82039022171FFB6700AC651C /* mailErrand.m in Sources */ = {isa = PBXBuildFile; fileRef = 82039021171FFB6700AC651C /* mailErrand.m */; };
 		82039025171FFB9900AC651C /* drycleaningErrand.m in Sources */ = {isa = PBXBuildFile; fileRef = 82039024171FFB9900AC651C /* drycleaningErrand.m */; };
+		8203902F1720343100AC651C /* InfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8203902E1720343100AC651C /* InfoView.xib */; };
+		820390321720347700AC651C /* InfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 820390311720347600AC651C /* InfoView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,9 @@
 		82039021171FFB6700AC651C /* mailErrand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mailErrand.m; sourceTree = "<group>"; };
 		82039023171FFB9900AC651C /* drycleaningErrand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drycleaningErrand.h; sourceTree = "<group>"; };
 		82039024171FFB9900AC651C /* drycleaningErrand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = drycleaningErrand.m; sourceTree = "<group>"; };
+		8203902E1720343100AC651C /* InfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoView.xib; sourceTree = "<group>"; };
+		820390301720347600AC651C /* InfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoView.h; sourceTree = "<group>"; };
+		820390311720347600AC651C /* InfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +128,9 @@
 				82039021171FFB6700AC651C /* mailErrand.m */,
 				82039023171FFB9900AC651C /* drycleaningErrand.h */,
 				82039024171FFB9900AC651C /* drycleaningErrand.m */,
+				8203902E1720343100AC651C /* InfoView.xib */,
+				820390301720347600AC651C /* InfoView.h */,
+				820390311720347600AC651C /* InfoView.m */,
 			);
 			path = "AOC2-2";
 			sourceTree = "<group>";
@@ -200,6 +208,7 @@
 				82039014171F615A00AC651C /* package.jpg in Resources */,
 				82039015171F615A00AC651C /* shoppingcart.jpg in Resources */,
 				82039016171F615A00AC651C /* suit.jpg in Resources */,
+				8203902F1720343100AC651C /* InfoView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +227,7 @@
 				8203901F171FFB1C00AC651C /* groceryErrand.m in Sources */,
 				82039022171FFB6700AC651C /* mailErrand.m in Sources */,
 				82039025171FFB9900AC651C /* drycleaningErrand.m in Sources */,
+				820390321720347700AC651C /* InfoView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

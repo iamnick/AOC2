@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "InfoView.h"
 
 @interface ViewController ()
 
@@ -28,10 +29,13 @@
 
 -(IBAction)onErrandClick:(id)sender
 {
-	// Reset the button states to enabled
+	// Reset the Buttons
     groceryButton.enabled = true;
     mailButton.enabled = true;
     drycleaningButton.enabled = true;
+    groceryButton.titleLabel.font = [UIFont systemFontOfSize:15];
+    mailButton.titleLabel.font = [UIFont systemFontOfSize:15];
+    drycleaningButton.titleLabel.font = [UIFont systemFontOfSize:15];
     calcButton.enabled = true;
     
 	// Reset the Property Values, Labels, and Steppers
@@ -61,6 +65,7 @@
             propertyDescLabelA.text = @"Packages to Pick Up:";
             propertyDescLabelB.text = @"Packages to Send:";
         }
+        errandButton.titleLabel.font = [UIFont boldSystemFontOfSize:15];
         errandButton.enabled = false;
         calcButton.tag = errandButton.tag;
     }
@@ -113,6 +118,29 @@
     }
     // Change Label to Display Estimated Errand Time
     errandTimeLabel.text = [NSString stringWithFormat:@"This errand will take %d minutes.", errandTime];
+}
+
+-(IBAction)onSegmentChange:(id)sender
+{
+	UISegmentedControl *segmentControl = (UISegmentedControl*)sender;
+    if (segmentControl != nil) {
+    	int selected = segmentControl.selectedSegmentIndex;
+        if (selected == 0) {
+        	self.view.backgroundColor = [UIColor whiteColor];
+        } else if (selected == 1) {
+        	self.view.backgroundColor = [UIColor lightGrayColor];
+        } else if (selected == 2) {
+        	self.view.backgroundColor = [UIColor darkGrayColor];
+        }
+    }
+}
+
+-(IBAction)onInfoClick:(id)sender
+{
+	InfoView *infoUI = [[InfoView alloc] initWithNibName:@"InfoView" bundle:nil];
+    if (infoUI != nil) {
+    	[self presentViewController:infoUI animated:true completion:^(){}];
+    }
 }
 
 @end
