@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "InfoView.h"
+#import "Settings.h"
 
 @interface ViewController ()
 
@@ -17,8 +18,15 @@
 
 - (void)viewDidLoad
 {
+	[Settings CreateInstance];
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+	self.view.backgroundColor = [[Settings GetInstance] bgColor];
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,7 +53,7 @@
     propertyStepperB.value = 0;
     propertyStepperA.hidden = false;
     propertyStepperB.hidden = false;
-    errandTimeLabel.text = @"";
+    errandTimeText.text = @"";
 	
 	UIButton *errandButton = (UIButton*)sender;
     if (errandButton != nil) {
@@ -84,7 +92,7 @@
         }
     }
     // Clear the calculated errand time label
-    errandTimeLabel.text = @"";
+    errandTimeText.text = @"";
 }
 
 -(IBAction)onCalculateClick:(id)sender
@@ -117,22 +125,7 @@
         errandTime = [postOfficeTrip errandTimeMinutes];
     }
     // Change Label to Display Estimated Errand Time
-    errandTimeLabel.text = [NSString stringWithFormat:@"This errand will take %d minutes.", errandTime];
-}
-
--(IBAction)onSegmentChange:(id)sender
-{
-	UISegmentedControl *segmentControl = (UISegmentedControl*)sender;
-    if (segmentControl != nil) {
-    	int selected = segmentControl.selectedSegmentIndex;
-        if (selected == 0) {
-        	self.view.backgroundColor = [UIColor whiteColor];
-        } else if (selected == 1) {
-        	self.view.backgroundColor = [UIColor lightGrayColor];
-        } else if (selected == 2) {
-        	self.view.backgroundColor = [UIColor darkGrayColor];
-        }
-    }
+    errandTimeText.text = [NSString stringWithFormat:@"This errand will take %d minutes.", errandTime];
 }
 
 -(IBAction)onInfoClick:(id)sender

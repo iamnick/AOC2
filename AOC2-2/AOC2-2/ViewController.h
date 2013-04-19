@@ -23,12 +23,11 @@
     IBOutlet UIStepper *propertyStepperB;
     
     IBOutlet UIButton *calcButton;
-    IBOutlet UILabel *errandTimeLabel;
+    IBOutlet UITextField *errandTimeText;
 }
 
 -(IBAction)onErrandClick:(id)sender;
 -(IBAction)onStepperChange:(id)sender;
 -(IBAction)onCalculateClick:(id)sender;
--(IBAction)onSegmentChange:(id)sender;
 -(IBAction)onInfoClick:(id)sender;
 @end

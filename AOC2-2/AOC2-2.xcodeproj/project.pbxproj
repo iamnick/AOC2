@@ -28,6 +28,7 @@
 		82039025171FFB9900AC651C /* drycleaningErrand.m in Sources */ = {isa = PBXBuildFile; fileRef = 82039024171FFB9900AC651C /* drycleaningErrand.m */; };
 		8203902F1720343100AC651C /* InfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8203902E1720343100AC651C /* InfoView.xib */; };
 		820390321720347700AC651C /* InfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 820390311720347600AC651C /* InfoView.m */; };
+		820390351720C45800AC651C /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 820390341720C45800AC651C /* Settings.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,8 @@
 		8203902E1720343100AC651C /* InfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoView.xib; sourceTree = "<group>"; };
 		820390301720347600AC651C /* InfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoView.h; sourceTree = "<group>"; };
 		820390311720347600AC651C /* InfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoView.m; sourceTree = "<group>"; };
+		820390331720C45800AC651C /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		820390341720C45800AC651C /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,8 @@
 				8203902E1720343100AC651C /* InfoView.xib */,
 				820390301720347600AC651C /* InfoView.h */,
 				820390311720347600AC651C /* InfoView.m */,
+				820390331720C45800AC651C /* Settings.h */,
+				820390341720C45800AC651C /* Settings.m */,
 			);
 			path = "AOC2-2";
 			sourceTree = "<group>";
@@ -228,6 +233,7 @@
 				82039022171FFB6700AC651C /* mailErrand.m in Sources */,
 				82039025171FFB9900AC651C /* drycleaningErrand.m in Sources */,
 				820390321720347700AC651C /* InfoView.m in Sources */,
+				820390351720C45800AC651C /* Settings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

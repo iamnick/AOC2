@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Settings.h"
 
 @interface InfoView : UIViewController
-
+{
+	IBOutlet UISegmentedControl *bgColorSegment;
+}
 -(IBAction)onClose:(id)sender;
+-(IBAction)onSegmentChange:(id)sender;
 
 @end
