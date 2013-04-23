@@ -18,9 +18,6 @@
 		82039005171F5F6100AC651C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82039004171F5F6100AC651C /* Default-568h@2x.png */; };
 		82039008171F5F6100AC651C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82039007171F5F6100AC651C /* ViewController.m */; };
 		8203900B171F5F6100AC651C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82039009171F5F6100AC651C /* ViewController.xib */; };
-		82039014171F615A00AC651C /* package.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82039011171F615A00AC651C /* package.jpg */; };
-		82039015171F615A00AC651C /* shoppingcart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82039012171F615A00AC651C /* shoppingcart.jpg */; };
-		82039016171F615A00AC651C /* suit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82039013171F615A00AC651C /* suit.jpg */; };
 		82039019171FFA6700AC651C /* baseErrand.m in Sources */ = {isa = PBXBuildFile; fileRef = 82039018171FFA6700AC651C /* baseErrand.m */; };
 		8203901C171FFACD00AC651C /* errandFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8203901B171FFACD00AC651C /* errandFactory.m */; };
 		8203901F171FFB1C00AC651C /* groceryErrand.m in Sources */ = {isa = PBXBuildFile; fileRef = 8203901E171FFB1C00AC651C /* groceryErrand.m */; };
@@ -29,6 +26,9 @@
 		8203902F1720343100AC651C /* InfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8203902E1720343100AC651C /* InfoView.xib */; };
 		820390321720347700AC651C /* InfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 820390311720347600AC651C /* InfoView.m */; };
 		820390351720C45800AC651C /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 820390341720C45800AC651C /* Settings.m */; };
+		828FA6E01727529C00F4EE4E /* package.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 828FA6DD1727529C00F4EE4E /* package.jpg */; };
+		828FA6E11727529C00F4EE4E /* shoppingcart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 828FA6DE1727529C00F4EE4E /* shoppingcart.jpg */; };
+		828FA6E21727529C00F4EE4E /* suit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 828FA6DF1727529C00F4EE4E /* suit.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,9 +48,6 @@
 		82039006171F5F6100AC651C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		82039007171F5F6100AC651C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8203900A171F5F6100AC651C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		82039011171F615A00AC651C /* package.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = package.jpg; path = ../../../package.jpg; sourceTree = "<group>"; };
-		82039012171F615A00AC651C /* shoppingcart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = shoppingcart.jpg; path = ../../../shoppingcart.jpg; sourceTree = "<group>"; };
-		82039013171F615A00AC651C /* suit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = suit.jpg; path = ../../../suit.jpg; sourceTree = "<group>"; };
 		82039017171FFA6700AC651C /* baseErrand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseErrand.h; sourceTree = "<group>"; };
 		82039018171FFA6700AC651C /* baseErrand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baseErrand.m; sourceTree = "<group>"; };
 		8203901A171FFACC00AC651C /* errandFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = errandFactory.h; sourceTree = "<group>"; };
@@ -66,6 +63,9 @@
 		820390311720347600AC651C /* InfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoView.m; sourceTree = "<group>"; };
 		820390331720C45800AC651C /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
 		820390341720C45800AC651C /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
+		828FA6DD1727529C00F4EE4E /* package.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = package.jpg; sourceTree = "<group>"; };
+		828FA6DE1727529C00F4EE4E /* shoppingcart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shoppingcart.jpg; sourceTree = "<group>"; };
+		828FA6DF1727529C00F4EE4E /* suit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = suit.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +112,9 @@
 		82038FF4171F5F6100AC651C /* AOC2-2 */ = {
 			isa = PBXGroup;
 			children = (
-				82039011171F615A00AC651C /* package.jpg */,
-				82039012171F615A00AC651C /* shoppingcart.jpg */,
-				82039013171F615A00AC651C /* suit.jpg */,
+				828FA6DD1727529C00F4EE4E /* package.jpg */,
+				828FA6DE1727529C00F4EE4E /* shoppingcart.jpg */,
+				828FA6DF1727529C00F4EE4E /* suit.jpg */,
 				82038FFD171F5F6100AC651C /* AppDelegate.h */,
 				82038FFE171F5F6100AC651C /* AppDelegate.m */,
 				82039006171F5F6100AC651C /* ViewController.h */,
@@ -210,10 +210,10 @@
 				82039003171F5F6100AC651C /* Default@2x.png in Resources */,
 				82039005171F5F6100AC651C /* Default-568h@2x.png in Resources */,
 				8203900B171F5F6100AC651C /* ViewController.xib in Resources */,
-				82039014171F615A00AC651C /* package.jpg in Resources */,
-				82039015171F615A00AC651C /* shoppingcart.jpg in Resources */,
-				82039016171F615A00AC651C /* suit.jpg in Resources */,
 				8203902F1720343100AC651C /* InfoView.xib in Resources */,
+				828FA6E01727529C00F4EE4E /* package.jpg in Resources */,
+				828FA6E11727529C00F4EE4E /* shoppingcart.jpg in Resources */,
+				828FA6E21727529C00F4EE4E /* suit.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +315,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AOC2-2/AOC2-2-Prefix.pch";
 				INFOPLIST_FILE = "AOC2-2/AOC2-2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -326,7 +328,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AOC2-2/AOC2-2-Prefix.pch";
 				INFOPLIST_FILE = "AOC2-2/AOC2-2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -350,6 +354,7 @@
 				82039010171F5F6100AC651C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
