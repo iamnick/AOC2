@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @protocol passEventInfoDelegate <NSObject>
--(void)didClose:(NSString*)eventName;
+-(void)saveEvent:(NSString*)eventName eventDate:(NSDate*)eventDate;
 @end
 
 @interface AddEventView : UIViewController

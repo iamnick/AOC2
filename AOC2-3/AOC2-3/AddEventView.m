@@ -32,6 +32,13 @@
 	// Do any additional setup after loading the view.
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+	// Sets date picker minimum date to the current date
+	NSDate *currentDate = [NSDate date];
+	eventDatePicker.minimumDate = currentDate;
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -43,13 +50,13 @@
     if (delegate != nil)
     {
     	// Capture event name + date, call delegate method
-    	[delegate didClose:eventNameTextField.text];
+    	[delegate saveEvent:eventNameTextField.text eventDate:eventDatePicker.date];
     }
 	[self dismissViewControllerAnimated:true completion:^(){}];
 }
 
 -(IBAction)onCloseKeyboardClick:(id)sender
 {
-
+	[eventNameTextField resignFirstResponder];
 }
 @end

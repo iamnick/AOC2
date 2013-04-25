@@ -36,8 +36,22 @@
 		}
 }
 
--(void)didClose:(NSString *)eventName
+-(void)saveEvent:(NSString*)eventName eventDate:(NSDate*)eventDate
 {
-	eventTextView.text = eventName;
+	// Format the date
+     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    if (dateFormatter != nil) {
+        [dateFormatter setDateFormat:@"MMMM dd, y - hh:mm a"];
+    }
+    
+    // Capture current text in textview
+    NSMutableString *textViewText = [[NSMutableString alloc] initWithString:eventTextView.text];
+    
+    // Add event name and date to existing text from the text view
+	[textViewText appendString:[NSString stringWithFormat:@"%@\n%@\n\n", eventName, [dateFormatter stringFromDate:eventDate]]];
+    
+    // Re-add updated text to the text view
+    eventTextView.text = textViewText;
+    NSLog(@"date=%@", [eventDate description]);
 }
 @end
