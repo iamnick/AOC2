@@ -31,7 +31,13 @@
 {
 		AddEventView *addEventView = [[AddEventView alloc] initWithNibName:@"AddEventView" bundle:nil];
     	if (addEventView != nil) {
+        	addEventView.delegate = self;
     		[self presentViewController:addEventView animated:true completion:^(){}];
 		}
+}
+
+-(void)didClose:(NSString *)eventName
+{
+	eventTextView.text = eventName;
 }
 @end

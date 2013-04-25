@@ -14,11 +14,14 @@
 
 @implementation AddEventView
 
+@synthesize delegate;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        delegate = nil;
     }
     return self;
 }
@@ -37,6 +40,11 @@
 
 -(IBAction)onSaveEventClick:(id)sender
 {
+    if (delegate != nil)
+    {
+    	// Capture event name + date, call delegate method
+    	[delegate didClose:eventNameTextField.text];
+    }
 	[self dismissViewControllerAnimated:true completion:^(){}];
 }
 
