@@ -47,12 +47,21 @@
 
 -(IBAction)onSaveEventClick:(id)sender
 {
-    if (delegate != nil)
-    {
-    	// Capture event name + date, call delegate method
-    	[delegate saveEvent:eventNameTextField.text eventDate:eventDatePicker.date];
+	// Checks to make sure something is in the event name textfield
+	if ([eventNameTextField.text length] > 0) {
+        if (delegate != nil)
+        {
+            // Capture event name + date, call delegate method
+            [delegate saveEvent:eventNameTextField.text eventDate:eventDatePicker.date];
+        }
+        [self dismissViewControllerAnimated:true completion:^(){}];
+	} else {
+    	// Display alert if event name textfield is empty
+        UIAlertView *emptyEventNameAlert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Please enter an event name." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        if (emptyEventNameAlert != nil) {
+        	[emptyEventNameAlert show];
+        }
     }
-	[self dismissViewControllerAnimated:true completion:^(){}];
 }
 
 -(IBAction)onCloseKeyboardClick:(id)sender
