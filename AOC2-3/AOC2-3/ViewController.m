@@ -19,6 +19,13 @@
 - (void)viewDidLoad
 {
 	[dataHolder CreateInstance];
+    
+    defaults = [NSUserDefaults standardUserDefaults];
+    if ([defaults objectForKey:@"allEvents"] != nil) {
+    	// load events
+        eventTextView.text = [defaults objectForKey:@"allEvents"];
+    }
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -31,7 +38,7 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-	// check the singleton for event data
+	// check the singleton for event data, add to textview if there is new data
     if ([[dataHolder GetInstance] newEvent] == TRUE) {
         // Capture current text in textview
     	NSMutableString *textViewText = [[NSMutableString alloc] initWithString:eventTextView.text];
@@ -48,9 +55,21 @@
 
 -(IBAction)onAddEventClick:(id)sender
 {
-		AddEventView *addEventView = [[AddEventView alloc] initWithNibName:@"AddEventView" bundle:nil];
-    	if (addEventView != nil) {
-    		[self presentViewController:addEventView animated:true completion:^(){}];
-		}
+    AddEventView *addEventView = [[AddEventView alloc] initWithNibName:@"AddEventView" bundle:nil];
+    if (addEventView != nil) {
+        [self presentViewController:addEventView animated:true completion:^(){}];
+    }
 }
+
+-(IBAction)onSaveEventsClick:(id)sender
+{
+    NSString *allEvents = [[NSString alloc] initWithString:eventTextView.text];
+    [defaults setObject:allEvents forKey:@"allEvents"];
+    UIAlertView *dataSavedAlert = [[UIAlertView alloc] initWithTitle:@"Success" message:@"Event List Saved" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        if (dataSavedAlert != nil) {
+        	[dataSavedAlert show];
+        }
+
+}
+
 @end
