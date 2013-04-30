@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "AddEventView.h"
 
-@interface ViewController : UIViewController <passEventInfoDelegate>
+@interface ViewController : UIViewController
 {
 	IBOutlet UITextView *eventTextView;
 }

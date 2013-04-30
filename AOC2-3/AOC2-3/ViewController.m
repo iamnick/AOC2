@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "AddEventView.h"
+#import "dataHolder.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,7 @@
 
 - (void)viewDidLoad
 {
+	[dataHolder CreateInstance];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -27,31 +29,28 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+	// check the singleton for event data
+    if ([[dataHolder GetInstance] newEvent] == TRUE) {
+        // Capture current text in textview
+    	NSMutableString *textViewText = [[NSMutableString alloc] initWithString:eventTextView.text];
+        
+    	// Add event name and date to existing text from the text view
+		[textViewText appendString:[[dataHolder GetInstance] createEventString]];
+    
+    	// Re-add updated text to the text view
+    	eventTextView.text = textViewText;
+        
+        [[dataHolder GetInstance] setNewEvent:FALSE];
+    }
+}
+
 -(IBAction)onAddEventClick:(id)sender
 {
 		AddEventView *addEventView = [[AddEventView alloc] initWithNibName:@"AddEventView" bundle:nil];
     	if (addEventView != nil) {
-        	addEventView.delegate = self;
     		[self presentViewController:addEventView animated:true completion:^(){}];
 		}
-}
-
--(void)saveEvent:(NSString*)eventName eventDate:(NSDate*)eventDate
-{
-	// Format the date
-     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    if (dateFormatter != nil) {
-        [dateFormatter setDateFormat:@"MMMM dd, y - hh:mm a"];
-    }
-    
-    // Capture current text in textview
-    NSMutableString *textViewText = [[NSMutableString alloc] initWithString:eventTextView.text];
-    
-    // Add event name and date to existing text from the text view
-	[textViewText appendString:[NSString stringWithFormat:@"%@\n%@\n\n", eventName, [dateFormatter stringFromDate:eventDate]]];
-    
-    // Re-add updated text to the text view
-    eventTextView.text = textViewText;
-    NSLog(@"date=%@", [eventDate description]);
 }
 @end

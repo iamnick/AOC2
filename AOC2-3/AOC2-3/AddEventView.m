@@ -7,6 +7,7 @@
 //
 
 #import "AddEventView.h"
+#import "dataHolder.h"
 
 @interface AddEventView ()
 
@@ -14,14 +15,11 @@
 
 @implementation AddEventView
 
-@synthesize delegate;
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        delegate = nil;
     }
     return self;
 }
@@ -49,11 +47,10 @@
 {
 	// Checks to make sure something is in the event name textfield
 	if ([eventNameTextField.text length] > 0) {
-        if (delegate != nil)
-        {
-            // Capture event name + date, call delegate method
-            [delegate saveEvent:eventNameTextField.text eventDate:eventDatePicker.date];
-        }
+        // Capture event name + date, store in singleton
+        [[dataHolder GetInstance] setEventName:eventNameTextField.text];
+        [[dataHolder GetInstance] setEventDate:eventDatePicker.date];
+        [[dataHolder GetInstance] setNewEvent:TRUE];
         [self dismissViewControllerAnimated:true completion:^(){}];
 	} else {
     	// Display alert if event name textfield is empty

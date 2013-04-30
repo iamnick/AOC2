@@ -8,21 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol passEventInfoDelegate <NSObject>
--(void)saveEvent:(NSString*)eventName eventDate:(NSDate*)eventDate;
-@end
-
 @interface AddEventView : UIViewController
 {
 	IBOutlet UITextField *eventNameTextField;
     IBOutlet UIDatePicker *eventDatePicker;
-    
-    id<passEventInfoDelegate> delegate;
 }
 
 -(IBAction)onSaveEventClick:(id)sender;
 -(IBAction)onCloseKeyboardClick:(id)sender;
-
-@property (strong) id<passEventInfoDelegate> delegate;
 
 @end
