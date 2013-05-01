@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8289A69617305A49002968DB /* dataHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8289A69517305A49002968DB /* dataHolder.m */; };
 		828FA6F017296B2F00F4EE4E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828FA6EF17296B2F00F4EE4E /* UIKit.framework */; };
 		828FA6F217296B2F00F4EE4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828FA6F117296B2F00F4EE4E /* Foundation.framework */; };
 		828FA6F417296B2F00F4EE4E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828FA6F317296B2F00F4EE4E /* CoreGraphics.framework */; };
@@ -21,11 +20,10 @@
 		828FA70C17296B2F00F4EE4E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 828FA70A17296B2F00F4EE4E /* ViewController.xib */; };
 		828FA71317296C6100F4EE4E /* AddEventView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 828FA71217296C6100F4EE4E /* AddEventView.xib */; };
 		828FA71617296CBD00F4EE4E /* AddEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = 828FA71517296CBD00F4EE4E /* AddEventView.m */; };
+		8294718D17316C860045E78E /* dataHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8294718C17316C860045E78E /* dataHolder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8289A69417305A49002968DB /* dataHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dataHolder.h; path = ../dataHolder.h; sourceTree = "<group>"; };
-		8289A69517305A49002968DB /* dataHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = dataHolder.m; path = ../dataHolder.m; sourceTree = "<group>"; };
 		828FA6EC17296B2F00F4EE4E /* AOC2-3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AOC2-3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		828FA6EF17296B2F00F4EE4E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		828FA6F117296B2F00F4EE4E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -45,6 +43,8 @@
 		828FA71217296C6100F4EE4E /* AddEventView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddEventView.xib; sourceTree = "<group>"; };
 		828FA71417296CBD00F4EE4E /* AddEventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEventView.h; sourceTree = "<group>"; };
 		828FA71517296CBD00F4EE4E /* AddEventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEventView.m; sourceTree = "<group>"; };
+		8294718B17316C860045E78E /* dataHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dataHolder.h; sourceTree = "<group>"; };
+		8294718C17316C860045E78E /* dataHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dataHolder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +91,8 @@
 		828FA6F517296B2F00F4EE4E /* AOC2-3 */ = {
 			isa = PBXGroup;
 			children = (
+				8294718B17316C860045E78E /* dataHolder.h */,
+				8294718C17316C860045E78E /* dataHolder.m */,
 				828FA6FE17296B2F00F4EE4E /* AppDelegate.h */,
 				828FA6FF17296B2F00F4EE4E /* AppDelegate.m */,
 				828FA70717296B2F00F4EE4E /* ViewController.h */,
@@ -100,8 +102,6 @@
 				828FA71217296C6100F4EE4E /* AddEventView.xib */,
 				828FA71417296CBD00F4EE4E /* AddEventView.h */,
 				828FA71517296CBD00F4EE4E /* AddEventView.m */,
-				8289A69417305A49002968DB /* dataHolder.h */,
-				8289A69517305A49002968DB /* dataHolder.m */,
 			);
 			path = "AOC2-3";
 			sourceTree = "<group>";
@@ -191,7 +191,7 @@
 				828FA70017296B2F00F4EE4E /* AppDelegate.m in Sources */,
 				828FA70917296B2F00F4EE4E /* ViewController.m in Sources */,
 				828FA71617296CBD00F4EE4E /* AddEventView.m in Sources */,
-				8289A69617305A49002968DB /* dataHolder.m in Sources */,
+				8294718D17316C860045E78E /* dataHolder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
