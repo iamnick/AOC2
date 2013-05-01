@@ -13,10 +13,14 @@
 {
 	IBOutlet UITextView *eventTextView;
     IBOutlet UIButton *saveEventsButton;
+    IBOutlet UILabel *addEventLabel;
+	UISwipeGestureRecognizer *rightSwipe;
+    
     NSUserDefaults *defaults;
 }
 
 -(IBAction)onAddEventClick:(id)sender;
 -(IBAction)onSaveEventsClick:(id)sender;
+-(void)onSwipe:(UISwipeGestureRecognizer*)recognizer;
 
 @end

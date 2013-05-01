@@ -51,14 +51,12 @@
         
         [[dataHolder GetInstance] setNewEvent:FALSE];
     }
-}
-
--(IBAction)onAddEventClick:(id)sender
-{
-    AddEventView *addEventView = [[AddEventView alloc] initWithNibName:@"AddEventView" bundle:nil];
-    if (addEventView != nil) {
-        [self presentViewController:addEventView animated:true completion:^(){}];
-    }
+    
+    // add swipe gesture to add event label
+    rightSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
+    rightSwipe.direction = UISwipeGestureRecognizerDirectionRight;
+    [addEventLabel addGestureRecognizer:rightSwipe];
+    
 }
 
 -(IBAction)onSaveEventsClick:(id)sender
@@ -70,6 +68,14 @@
         	[dataSavedAlert show];
         }
 
+}
+
+-(void)onSwipe:(UISwipeGestureRecognizer*)recognizer
+{
+	AddEventView *addEventView = [[AddEventView alloc] initWithNibName:@"AddEventView" bundle:nil];
+    if (addEventView != nil) {
+        [self presentViewController:addEventView animated:true completion:^(){}];
+    }
 }
 
 @end
