@@ -35,6 +35,11 @@
 	// Sets date picker minimum date to the current date
 	NSDate *currentDate = [NSDate date];
 	eventDatePicker.minimumDate = currentDate;
+
+	// add swipe gesture to save & close label
+    leftSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
+    leftSwipe.direction = UISwipeGestureRecognizerDirectionLeft;
+    [closeLabel addGestureRecognizer:leftSwipe];
 }
 
 - (void)didReceiveMemoryWarning
@@ -43,7 +48,7 @@
     // Dispose of any resources that can be recreated.
 }
 
--(IBAction)onSaveEventClick:(id)sender
+-(void)onSwipe:(UISwipeGestureRecognizer*)recognizer
 {
 	// Checks to make sure something is in the event name textfield
 	if ([eventNameTextField.text length] > 0) {

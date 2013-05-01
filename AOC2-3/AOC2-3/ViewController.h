@@ -19,7 +19,6 @@
     NSUserDefaults *defaults;
 }
 
--(IBAction)onAddEventClick:(id)sender;
 -(IBAction)onSaveEventsClick:(id)sender;
 -(void)onSwipe:(UISwipeGestureRecognizer*)recognizer;
 

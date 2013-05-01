@@ -12,9 +12,11 @@
 {
 	IBOutlet UITextField *eventNameTextField;
     IBOutlet UIDatePicker *eventDatePicker;
+    IBOutlet UILabel *closeLabel;
+    UISwipeGestureRecognizer *leftSwipe;
 }
 
--(IBAction)onSaveEventClick:(id)sender;
 -(IBAction)onCloseKeyboardClick:(id)sender;
+-(void)onSwipe:(UISwipeGestureRecognizer*)recognizer;
 
 @end
